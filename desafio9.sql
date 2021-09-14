@@ -3,5 +3,5 @@ SELECT
 FROM
     purchase_orders
 WHERE
-	  notes
+    notes
 IS NOT NULL;
