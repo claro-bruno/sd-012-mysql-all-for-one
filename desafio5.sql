@@ -2,4 +2,4 @@ SELECT
     *
 FROM
     northwind.products
-LIMIT 4 , 10;
+LIMIT 3 , 10;
