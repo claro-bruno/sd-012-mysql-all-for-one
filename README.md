@@ -201,7 +201,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 Para executar localmente os testes, é preciso escrever o seguinte no seu terminal:
 ```sh
-MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
+MYSQL_USER=Lucas MYSQL_PASSWORD=lucaslucas HOSTNAME=localhost npm test
 ```
 
 Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha e `localhost` como host. Logo, você executaria:
