@@ -85,7 +85,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe("8 - Faça uma consulta que retorne três colunas, respectivamente, com os nomes 'A', 'Trybe' e 'de', e com valores referentes a soma de '5 + 6', a string 'de', a soma de '2 + 8'", () => {
+  describe.only("8 - Faça uma consulta que retorne três colunas, respectivamente, com os nomes 'A', 'Trybe' e 'de', e com valores referentes a soma de '5 + 6', a string 'de', a soma de '2 + 8'", () => {
     it('Verifica o desafio8', async () => {
       const challengeQuery = readFileSync('desafio8.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult8');
