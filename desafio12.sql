@@ -1,5 +1,5 @@
 SELECT 
-    supplier_id
+    submitted_date
 FROM
     northwind.purchase_orders
 WHERE

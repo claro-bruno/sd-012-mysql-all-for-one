@@ -1,5 +1,5 @@
 UPDATE order_details 
 SET 
-    discount = 15
+    discount = 30
 WHERE
     unit_price > 10.0000;
