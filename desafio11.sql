@@ -1,5 +1,5 @@
 SELECT 
-    id
+    notes
 FROM
     northwind.purchase_orders
 WHERE
