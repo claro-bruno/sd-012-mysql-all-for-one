@@ -108,7 +108,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-012-mysql-all-for-one.git`.
+  * `git clone git@github.com:tryber/sd-012-mysql-all-for-one.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-012-mysql-all-for-one`
 
