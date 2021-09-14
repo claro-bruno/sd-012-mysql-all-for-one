@@ -10,7 +10,7 @@ INSERT INTO northwind.order_details
     inventory_id)
 VALUES
 (69,
-	80,
+    80,
     15.0000,
     15.0000,
     0,
