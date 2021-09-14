@@ -7,14 +7,16 @@ describe('Desafios iniciais', () => {
 
   beforeAll(async () => {
     const importer = new Importer(
-      { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
+     { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
     );
 
     await importer.import('./northwind.sql');
+    console.log(importer)
 
     importer.disconnect();
 
     sequelize = new Sequelize('northwind', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'})
+    console.log(sequelize)
   });
 
   afterAll(async () => {
