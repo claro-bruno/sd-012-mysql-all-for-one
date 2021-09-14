@@ -129,7 +129,7 @@ describe('Desafios de manipulação de tabelas', () => {
     });
   });
 
-  describe('Queries de deleção', () => {
+  describe.only('Queries de deleção', () => {
     const countOrderDetailsQuery = 'SELECT COUNT(*) AS details_count FROM order_details;';
 
     describe("25 - Delete todos os dados na coluna 'unit_price' da tabela 'order_details' em que o valor seja menor que 10.0000", () => {
