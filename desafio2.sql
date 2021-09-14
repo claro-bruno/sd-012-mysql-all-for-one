@@ -1,5 +1,4 @@
-USE northwind;
 SELECT 
     *
 FROM 
-    products;
+    northwind.products;
