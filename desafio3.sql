@@ -1,4 +1,4 @@
 SELECT 
-    order_id
+    id
 FROM
     northwind.products;
