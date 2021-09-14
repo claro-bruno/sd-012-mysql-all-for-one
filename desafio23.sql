@@ -1,4 +1,4 @@
-UPDATE order_details 
+UPDATE northwind.order_details 
 SET 
     discount = 30
 WHERE
