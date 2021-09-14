@@ -1,4 +1,4 @@
 SELECT
-  DATE_FORMAT( submitted_date, "%H" )
+  HOUR(submitted_date)
 FROM
   purchase_orders;
