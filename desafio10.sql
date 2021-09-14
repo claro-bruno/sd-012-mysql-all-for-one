@@ -1,3 +1,3 @@
 SELECT *  FROM northwind.purchase_orders
 WHERE created_by >= 3
-ORDER BY id, created_by DESC;
+ORDER BY crated_by DESC, id ASC;
