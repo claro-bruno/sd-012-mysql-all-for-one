@@ -2,4 +2,3 @@
     id
   FROM
     northwind.products;
- 
