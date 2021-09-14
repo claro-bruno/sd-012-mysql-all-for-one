@@ -1,5 +1,5 @@
   SELECT 
-    product_name
+      product_name
   FROM
-    northwind.products;
+      northwind.products;
  
