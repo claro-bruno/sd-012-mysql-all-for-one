@@ -2,7 +2,7 @@ const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
 const Importer = require('mysql-import');
 
-describe.skip('Desafios sobre filtragem de dados', () => {
+describe('Desafios sobre filtragem de dados', () => {
   let sequelize;
 
   beforeAll(async () => {
