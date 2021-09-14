@@ -1,4 +1,4 @@
-select
-  count(product_name)
-from
+SELECT
+  COUNT(product_name)
+FROM
   northwind.products;
