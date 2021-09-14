@@ -1,2 +1,2 @@
 SELECT notes FROM northwind.purchase_orders
-WHERE notes >= '%38'
+WHERE notes >= '%38';
