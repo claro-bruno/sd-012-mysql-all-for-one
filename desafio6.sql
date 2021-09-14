@@ -3,4 +3,4 @@ SELECT
 FROM
     products
 ORDER BY 
-	product_name ASC;
+	  product_name ASC;
