@@ -227,23 +227,23 @@ Monte queries para encontrar as informações esperadas pelos desafios:
 
 ## Desafios Iniciais
 
-#### 1 - Exiba apenas os nomes do produtos na tabela `products`.
+#### 1 DONE - Exiba apenas os nomes do produtos na tabela `products`.
 
-#### 2 - Exiba os dados de todas as colunas da tabela `products`.
+#### 2 DONE - Exiba os dados de todas as colunas da tabela `products`.
 
-#### 3 - Escreva uma query que exiba os valores da coluna que representa a primary key da tabela `products`.
+#### 3 DONE - Escreva uma query que exiba os valores da coluna que representa a primary key da tabela `products`.
 
-#### 4 - Conte quantos registros existem na coluna `product_name` da tabela `products`.
-#### 5 - Monte uma query que exiba os dados da tabela `products` a partir do quarto registro até o décimo terceiro.
+#### 4 DONE - Conte quantos registros existem na coluna `product_name` da tabela `products`.
+#### 5 DONE - Monte uma query que exiba os dados da tabela `products` a partir do quarto registro até o décimo terceiro.
 
 **Observações técnicas**
  - Tanto o quarto quanto o décimo terceiro registros, precisam aparecer na consulta.
  - Não use `where` ou `order by`.
 
-#### 6 - Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes.
+#### 6 DONE - Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes.
 
-#### 7 - Mostre apenas os ids dos 5 últimos registros da tabela `products` (a ordernação deve ser baseada na coluna `id`).
-#### 8 - Faça uma consulta que retorne três colunas, respectivamente, com os nomes 'A', 'Trybe' e 'de', e com valores referentes a soma de '5 + 6', a string 'de', a soma de '2 + 8'. 
+#### 7 DONE - Mostre apenas os ids dos 5 últimos registros da tabela `products` (a ordernação deve ser baseada na coluna `id`).
+#### 8 DONE - Faça uma consulta que retorne três colunas, respectivamente, com os nomes 'A', 'Trybe' e 'de', e com valores referentes a soma de '5 + 6', a string 'de', a soma de '2 + 8'. 
 
 **Observações técnicas**
  - Na primeira coluna, exiba a soma de `5 + 6` (essa soma deve ser realizada pelo SQL). 
@@ -256,14 +256,14 @@ Monte queries para encontrar as informações esperadas pelos desafios:
 
 ## Desafios sobre filtragem de dados
 
-#### 9 - Mostre todos os valores de `notes` da tabela `purchase_orders` que não são nulos.
+#### 9 DONE - Mostre todos os valores de `notes` da tabela `purchase_orders` que não são nulos.
 
-#### 10 - Mostre todos os dados da tabela `purchase_orders` em ordem decrescente, ordenados por `created_by` em que o `created_by` é maior ou igual a 3.
+#### 10 DONE - Mostre todos os dados da tabela `purchase_orders` em ordem decrescente, ordenados por `created_by` em que o `created_by` é maior ou igual a 3.
 
 **Observações técnicas**
  - Como critério de desempate para a ordenação, ordene também os resultados pelo `id` de forma crescente.
 
-#### 11 - Exiba os dados da coluna `notes` da tabela `purchase_orders` em que seu valor de `Purchase generated based on Order` é maior ou igual a 30 e menor ou igual a 39.
+#### 11 DONE- Exiba os dados da coluna `notes` da tabela `purchase_orders` em que seu valor de `Purchase generated based on Order` é maior ou igual a 30 e menor ou igual a 39.
 
 #### 12 - Mostre as `submitted_date` de `purchase_orders` em que a `submitted_date` é do dia 26 de abril de 2006.
 
