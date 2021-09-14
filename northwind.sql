@@ -5,7 +5,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 DROP database IF EXISTS `northwind` ;
 CREATE database IF NOT EXISTS `northwind` DEFAULT CHARACTER SET latin1 ;
 USE `northwind` ;
-
+-- mudança para o pull request
 -- -----------------------------------------------------
 -- Table `northwind`.`customers`
 -- -----------------------------------------------------
