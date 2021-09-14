@@ -3,4 +3,3 @@ SELECT
 FROM
     northwind.products;
 
-
