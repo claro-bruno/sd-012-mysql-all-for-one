@@ -1,6 +1,5 @@
-USE northwind;
 SELECT 
-*
+    *
 FROM
-products
+    northwind.products
 LIMIT 10 OFFSET 3;
