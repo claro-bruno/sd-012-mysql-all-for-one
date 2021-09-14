@@ -1,5 +1,5 @@
 SELECT
-    *
+    id
 FROM
     northwind.products
-LIMIT 10 OFFSET 3;
+ORDER BY id DESC LIMIT 5;
