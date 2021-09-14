@@ -1,4 +1,4 @@
-SELECT 
-    id
+SELECT
+    COUNT(id)
 FROM
     northwind.products;
