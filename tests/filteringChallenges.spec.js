@@ -17,7 +17,7 @@ describe('Desafios sobre filtragem de dados', () => {
     sequelize = new Sequelize('northwind', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'})
   });
    
-  connectafterAll(async () => {
+  afterAll(async () => {
     await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
     sequelize.close();
   }); 
