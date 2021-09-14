@@ -1,3 +1,3 @@
 SELECT 5 + 6 AS 'A' , 
-'Trybe' AS 'de',
+'de' AS 'Trybe',
   8 + 2 AS 'eh';
