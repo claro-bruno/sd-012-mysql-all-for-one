@@ -1,5 +1,5 @@
 SELECT
-	notes
+    notes
 FROM
-	northwind.purchase_orders
+    northwind.purchase_orders
 WHERE notes LIKE '%3_';

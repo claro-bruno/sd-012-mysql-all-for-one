@@ -1,6 +1,6 @@
 SELECT
-	COUNT(*) AS orders_count
+    COUNT(*) AS orders_count
 FROM
-	orders
+    orders
 WHERE employee_id IN (5, 6)
 AND shipper_id = 2;

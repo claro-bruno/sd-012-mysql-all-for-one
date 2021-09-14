@@ -1,6 +1,6 @@
 SELECT
-	id
+    id
 FROM
-	northwind.products
+    northwind.products
 ORDER BY id DESC
 LIMIT 5;
