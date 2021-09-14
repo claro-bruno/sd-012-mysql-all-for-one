@@ -4,7 +4,7 @@ const Importer = require('mysql-import');
 
 describe('Desafios sobre filtragem de dados', () => {
   let sequelize;
-
+   
   beforeAll(async () => {
     const importer = new Importer(
       { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
@@ -16,11 +16,11 @@ describe('Desafios sobre filtragem de dados', () => {
 
     sequelize = new Sequelize('northwind', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'})
   });
-
-  afterAll(async () => {
+   
+  connectafterAll(async () => {
     await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
     sequelize.close();
-  });
+  }); 
 
   describe("9 - Mostre todos os valores da coluna 'notes' da tabela 'purchase_orders' que não são nulos", () => {
     it('Verifica o desafio9', async () => {

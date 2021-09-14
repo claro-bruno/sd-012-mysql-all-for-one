@@ -17,10 +17,10 @@ describe('Desafios iniciais', () => {
     sequelize = new Sequelize('northwind', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'})
   });
 
-  afterAll(async () => {
+   afterAll(async () => {
     await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
     sequelize.close();
-  });
+  }); 
 
   describe("1 - Exiba apenas os nomes dos produtos da tabela 'products'", () => {
     it('Verifica o desafio1', async () => {

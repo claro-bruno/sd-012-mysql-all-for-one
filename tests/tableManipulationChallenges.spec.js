@@ -5,7 +5,7 @@ const Importer = require('mysql-import');
 describe('Desafios de manipulação de tabelas', () => {
   let importer;
   let sequelize;
-
+ 
   beforeAll(() => {
     importer = new Importer(
       { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
@@ -17,15 +17,15 @@ describe('Desafios de manipulação de tabelas', () => {
   afterAll(() => {
     importer.disconnect();
     sequelize.close();
-  });
-
+  }); 
+ 
   beforeEach(async () => {
     await importer.import('./northwind.sql');
     await sequelize.query('USE northwind;', { type: 'RAW' });
   });
 
   afterEach(async () => await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' }));
-
+  
   describe('Queries de inserção', () => {
     const countOrderDetailsQuery = `SELECT COUNT(*) AS details_count FROM northwind.order_details
       WHERE order_id = 69
