@@ -61,15 +61,24 @@ describe('Desafios iniciais', () => {
   describe("5 - Monte uma query que exiba os dados da tabela 'products' a partir do quarto registro até o décimo terceiro", () => {
     it('Verifica o desafio5', async () => {
       const challengeQuery = readFileSync('desafio5.sql', 'utf8').trim();
-      const expectedResult = require('./ch
-      RUNS  tests/tableManipulationChallenges.spec.js'desafio6.sql', 'utf8').trim();
+      
+      const expectedResult = require('./challengesResults/challengeResult5');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
+
+  describe("6 - Exiba os dados das colunas 'product_name' e 'id' da tabela 'products' de maneira que os resultados estejam em ordem alfabética dos nomes", () => {
+    it('Verifica o desafio6', async () => {
+      const challengeQuery = readFileSync('desafio6.sql', 'utf8').trim();
+      
       const expectedResult = require('./challengesResults/challengeResult6');
 
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
 
-  describe.only("7 - Mostre apenas os ids dos 5 últimos registros da tabela 'products' ordenados por 'id'", () => {
+  describe("7 - Mostre apenas os ids dos 5 últimos registros da tabela 'products' ordenados por 'id'", () => {
     it('Verifica o desafio7', async () => {
       const challengeQuery = readFileSync('desafio7.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult7');
