@@ -69,7 +69,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe("7 - Mostre apenas os ids dos 5 últimos registros da tabela 'products' ordenados por 'id'", () => {
+  describe.only("7 - Mostre apenas os ids dos 5 últimos registros da tabela 'products' ordenados por 'id'", () => {
     it('Verifica o desafio7', async () => {
       const challengeQuery = readFileSync('desafio7.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult7');
