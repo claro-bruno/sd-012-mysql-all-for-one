@@ -1,2 +1,6 @@
 USE northwind;
-SELECT * FROM products LIMIT 13 OFFSET 4;
+SELECT 
+*
+FROM
+products
+LIMIT 10 OFFSET 3;
