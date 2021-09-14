@@ -1,5 +1,5 @@
-SELECT 
+  SELECT 
     *
-FROM
+  FROM
     northwind.products;
 
