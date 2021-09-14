@@ -1,1 +1,5 @@
 -- Atualize os dados de discount do order_details para 15. (Não é necessário utilizar o SAFE UPDATE em sua query).
+SELECT * FROM order_details;
+UPDATE order_details
+SET discount = 15
+WHERE discount <> 15;
