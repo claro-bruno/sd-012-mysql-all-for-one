@@ -1,4 +1,4 @@
 SELECT 
-    *
+    id
 FROM
     products;
