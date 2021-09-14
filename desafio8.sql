@@ -1,4 +1,3 @@
-SELECT CONCAT('A ', 'Trybe ', 'eh ') AS 'A' , 
-CONCAT(5+6, ' de') 
-AS 'Trybe' , 
-CONCAT(2 + 8) AS 'eh';
+SELECT 5 + 6 AS 'A' , 
+'Trybe' AS 'de',
+ 8 + 2 AS 'eh';
