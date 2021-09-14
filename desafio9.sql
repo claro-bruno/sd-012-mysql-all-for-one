@@ -3,4 +3,4 @@ SELECT
 FROM 
   purchase_orders 
 WHERE 
-  notes is not null;
+  notes IS NOT NULL;
