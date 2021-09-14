@@ -1,4 +1,5 @@
 SELECT 
-  id
-FROM 
-  northwind.products;
+    id
+FROM
+    northwind.products;
+  

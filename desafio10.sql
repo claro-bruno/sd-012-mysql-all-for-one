@@ -1,8 +1,7 @@
 SELECT 
-  * 
-FROM 
-  northwind.purchase_orders
+    *
+FROM
+    northwind.purchase_orders
 WHERE
-  created_by >= 3
-ORDER BY
-  created_by DESC, id;
+    created_by >= 3
+ORDER BY created_by DESC , id;

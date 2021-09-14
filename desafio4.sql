@@ -1,4 +1,5 @@
 SELECT 
-  COUNT(*) 
+    COUNT(*)
 FROM
-  northwind.products;
+    northwind.products;
+  
