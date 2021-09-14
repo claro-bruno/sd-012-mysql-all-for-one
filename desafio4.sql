@@ -1,4 +1,4 @@
 SELECT
-    COUNT(products_name)
+    COUNT(product_name)
 FROM
     northwind.products;
