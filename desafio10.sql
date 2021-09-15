@@ -2,5 +2,4 @@ SELECT
     *
 FROM
     northwind.purchase_orders
-ORDER BY
-	created_by DESC, id;
+ORDER BY	created_by DESC, id;
