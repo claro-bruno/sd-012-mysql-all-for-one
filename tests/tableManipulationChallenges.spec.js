@@ -26,7 +26,7 @@ describe('Desafios de manipulação de tabelas', () => {
 
   afterEach(async () => await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' }));
 
-  describe.only('Queries de inserção', () => {
+  describe('Queries de inserção', () => {
     const countOrderDetailsQuery = `SELECT COUNT(*) AS details_count FROM northwind.order_details
       WHERE order_id = 69
             AND product_id = 80
