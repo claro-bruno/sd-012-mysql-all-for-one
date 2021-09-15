@@ -1,1 +1,1 @@
-select sum(5+6) A,'de' as Trybe,sum(2+8) eh;
+select 5+6 as A,'de' as Trybe,2+8 as eh;

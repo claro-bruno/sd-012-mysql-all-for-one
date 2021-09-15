@@ -1,0 +1,1 @@
+select * from northwind.purchase_orders;
