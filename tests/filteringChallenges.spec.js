@@ -20,6 +20,11 @@ describe('Desafios sobre filtragem de dados', () => {
   afterAll(async () => {
     await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
     sequelize.close();
+    const importer = new Importer(
+      { user: process.env.MYSQL_USER, password:    process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
+    );
+
+    await importer.import('./northwind.sql');
   });
 
   describe("9 - Mostre todos os valores da coluna 'notes' da tabela 'purchase_orders' que não são nulos", () => {
