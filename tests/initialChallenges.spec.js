@@ -20,6 +20,11 @@ describe('Desafios iniciais', () => {
   afterAll(async () => {
     await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
     sequelize.close();
+    const importer = new Importer(
+      { user: process.env.MYSQL_USER, password:    process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
+    );
+
+    await importer.import('./northwind.sql');
   });
 
   describe("1 - Exiba apenas os nomes dos produtos da tabela 'products'", () => {
