@@ -14,9 +14,9 @@ describe('Desafios de manipulação de tabelas', () => {
     sequelize = new Sequelize('', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'})
   });
 
-  afterAll(() => {
-    importer.Import('./northwind.sql')
-    importer.disconnect();
+  afterAll(async () => {
+    await importer.Import('./northwind.sql')
+    await importer.disconnect();
     sequelize.close();
   });
 
