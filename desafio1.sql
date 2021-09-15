@@ -1,1 +1,4 @@
-oi oi oi 
+SELECT 
+    product_name
+FROM
+    northwind.products;
