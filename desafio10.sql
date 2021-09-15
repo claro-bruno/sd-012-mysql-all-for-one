@@ -5,4 +5,4 @@ FROM
 WHERE
   created_by >= 5
 ORDER BY
-  created_by DESC;
+  created_by DESC, id ;
