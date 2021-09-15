@@ -1,5 +1,5 @@
 SELECT 
-    count(*)
+    count(*) AS 'orders_count'
 FROM
     northwind.orders
 WHERE
