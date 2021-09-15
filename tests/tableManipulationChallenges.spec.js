@@ -15,9 +15,9 @@ describe('Desafios de manipulação de tabelas', () => {
   });
 
   afterAll(async () => {
-    await importer.Import('./northwind.sql')
+    await importer.import('./northwind.sql');
     await importer.disconnect();
-    sequelize.close();
+    await sequelize.close();
   });
 
   beforeEach(async () => {
