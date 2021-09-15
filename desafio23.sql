@@ -3,4 +3,3 @@ SET
     discount = 45
 WHERE
     unit_price < 10.000;
-
